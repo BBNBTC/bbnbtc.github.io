@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Norsats Kursportal</title>
+  <title>Norsats Kurs</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white font-sans min-h-screen flex flex-col justify-between">
@@ -18,80 +18,76 @@
   </header>
 
   <!-- Innhold -->
- <main class="flex-grow">
-  <section class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4">Velkommen til Norsats Kurs</h1>
-    <p class="text-gray-300 mb-10">
-      Utforsk kursutvalget vårt for fagfolk i offentlig sektor, med fokus på økonomisk forståelse, teknologi og frihet. Kursene bygger på hverandre og gir deg verktøy til å møte fremtiden med kompetanse og ro.
-    </p>
+  <main class="flex-grow">
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Velkommen til Norsats Kurs</h1>
+      <p class="text-gray-300 mb-10">
+        Utforsk kursutvalget vårt for fagfolk i offentlig sektor, med fokus på økonomisk forståelse, teknologi og frihet.
+        Kursene bygger på hverandre og gir deg verktøy til å møte fremtiden med kompetanse og ro.
+      </p>
 
-    <!-- Kursknapper -->
-    <div class="grid md:grid-cols-3 gap-4 mb-8">
-      <a href="https://bbnbtc.github.io/kurs-sosionomer/"
-         class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">
-        Introduksjonskurs
-      </a>
-      <a href="#avansert"
-         class="bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition">
-        Avansert kurs
-      </a>
-      <a href="#ekspert"
-         class="bg-yellow-600 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition">
-        Ekspertkurs
-      </a>
-    </div>
-
-    <!-- Kort forklaring -->
-    <div class="text-left max-w-2xl mx-auto text-gray-300 space-y-6">
-      <div>
-        <h2 class="text-xl font-semibold text-white">Hva er introduksjonskurset?</h2>
-        <p>
-          Introduksjonskurset gir deg en grunnleggende forståelse av Bitcoin, digitale lommebøker og økonomisk autonomi. Vi ser på hvordan disse teknologiene påvirker NAV-relaterte rutiner og sosialt arbeid.
-          Kurset er lett tilgjengelig og krever ingen forkunnskaper. Det passer perfekt for deg som ønsker å utforske hvordan teknologi kan støtte mennesker i økonomisk og sosialt krevende livssituasjoner.
-        </p>
+      <!-- Kursknapper -->
+      <div class="grid md:grid-cols-3 gap-4 mb-8">
+        <a href="https://bbnbtc.github.io/kurs-sosionomer/"
+           class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">
+          Introduksjonskurs
+        </a>
+        <a href="#avansert"
+           class="bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition">
+          Avansert kurs
+        </a>
+        <a href="#ekspert"
+           class="bg-yellow-600 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition">
+          Ekspertkurs
+        </a>
       </div>
-    </div>
 
-    <!-- Ekstra lenker -->
-    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-      <a href="https://norsats.no"
-         class="border border-gray-400 px-5 py-2 rounded hover:bg-gray-800 transition">
-        🔙 Til hovedsiden (norsats.no)
-      </a>
-    </div>
-  </section>
+      <!-- Kort forklaring -->
+      <div class="text-left max-w-2xl mx-auto text-gray-300 space-y-6">
+        <div>
+          <h2 class="text-xl font-semibold text-white">Hva er introduksjonskurset?</h2>
+          <p>
+            Kurset gir en praktisk og lettfattelig innføring i Bitcoin og hvordan nye økonomiske verktøy endrer måten vi forstår verdioverføring, økonomisk støtte og personlig eierskap på.
+            Det er spesielt nyttig for fagpersoner som jobber med mennesker i systemer preget av kontroll, forvaltning og tillitsrelasjoner.
+            Du trenger ingen teknisk bakgrunn – bare et ønske om å forstå hvordan digitale verktøy kan åpne opp for mer bærekraftige, transparente og inkluderende løsninger.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Nivå-seksjoner (avansert + ekspert) -->
-  <section id="avansert" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
-    <h2 class="text-2xl font-bold mb-4">Avansert kurs</h2>
-    <p class="text-gray-300">
-      Dette kurset er for deg som har fullført introduksjonen og ønsker dypere forståelse av Bitcoin, Lightning Network, digital autonomi og hvordan nye teknologier utfordrer NAV og tradisjonelle systemer.
-    </p>
-  </section>
+    <!-- Kursnivåseksjoner -->
+    <section id="avansert" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Avansert kurs</h2>
+      <p class="text-gray-300">
+        Dette kurset er for deg som har fullført introduksjonen og ønsker dypere forståelse av Bitcoin, Lightning Network, digital autonomi
+        og hvordan nye teknologier utfordrer tradisjonelle systemer og institusjoner.
+      </p>
+    </section>
 
-  <section id="ekspert" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
-    <h2 class="text-2xl font-bold mb-4">Ekspertkurs</h2>
-    <p class="text-gray-300">
-      Ekspertkurset er for deg som ønsker å bli rådgiver, kursholder eller veileder i feltet. Du lærer om node-drift, BTCPay Server, økonomisk filosofi og hvordan bygge robuste digitale løsninger for mennesker i sårbare situasjoner.
-    </p>
-  </section>
+    <section id="ekspert" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Ekspertkurs</h2>
+      <p class="text-gray-300">
+        Ekspertkurset er for deg som ønsker å bli rådgiver, kursholder eller veileder i feltet.
+        Du lærer om node-drift, BTCPay Server, økonomisk filosofi og hvordan bygge robuste digitale løsninger for mennesker i sårbare situasjoner.
+      </p>
+    </section>
 
-  <!-- Kontakt -->
-  <section id="kontakt" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
-    <h2 class="text-2xl font-bold mb-4">Kontakt oss</h2>
-    <p class="text-gray-300 mb-4">
-      Har du spørsmål om kurs, samarbeid eller ønsker du å få tilpasset et kurs til din organisasjon?
-    </p>
-    <p class="text-gray-300">
-      📧 <a href="mailto:bjarne.borgan@norsats.no" class="underline text-yellow-400 hover:text-yellow-300">bjarne.borgan@norsats.no</a>
-    </p>
-  </section>
-</main>
-
+    <!-- Kontakt -->
+    <section id="kontakt" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Kontakt oss</h2>
+      <p class="text-gray-300 mb-4">
+        Har du spørsmål om kurs, samarbeid eller ønsker du å få tilpasset et kurs til din organisasjon?
+      </p>
+      <p class="text-gray-300">
+        📧 <a href="mailto:bjarne.borgan@norsats.no" class="underline text-yellow-400 hover:text-yellow-300">bjarne.borgan@norsats.no</a>
+      </p>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 p-4 bg-neutral-900">
-    &copy; 2025 Norsats | Bygger framtiden én node om gangen
+  <footer class="bg-neutral-900 text-sm text-gray-500 p-4 flex justify-between items-center">
+    <p>&copy; 2025 Norsats | Bygger framtiden én node om gangen</p>
+    <a href="https://norsats.no" class="text-yellow-400 hover:text-yellow-300">norsats.no</a>
   </footer>
 </body>
 </html>
