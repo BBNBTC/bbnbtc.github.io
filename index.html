@@ -3,34 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Norsats Kurs</title>
+  <title>Norsats Kursportal</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white font-sans min-h-screen flex flex-col justify-between">
   <!-- Header -->
   <header class="bg-neutral-900 shadow-md">
-  <div class="max-w-5xl mx-auto p-4 flex items-center justify-between">
-    <a href="https://norsats.no">
-      <img src="NorsatsLogoWide.webp" alt="Norsats logo" class="h-12 md:h-16" />
-    </a>
-    <p class="text-gray-400 text-sm hidden md:block">Skapere av en sirkulær økonomi</p>
-  </div>
-</header>
-
+    <div class="max-w-6xl mx-auto p-4 flex items-center justify-between">
+      <a href="https://norsats.no">
+        <img src="NorsatsLogoWide.webp" alt="Norsats logo" class="h-12 md:h-16" />
+      </a>
+      <p class="text-gray-400 text-sm hidden md:block">Skapere av en sirkulær økonomi</p>
+    </div>
+  </header>
 
   <!-- Innhold -->
   <main class="flex-grow">
-    <section class="max-w-5xl mx-auto px-6 py-16 text-center">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Velkommen til Norsats Kursportal</h2>
-      <p class="text-gray-300 mb-8 max-w-xl mx-auto">
-        Her finner du faglige ressurser og kurs tilpasset deg som arbeider med mennesker, systemer og samfunn i endring.
-        Vårt mål er å bygge bro mellom teknologi, frihet og sosialt ansvar.
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Velkommen til Norsats Kurs</h1>
+      <p class="text-gray-300 mb-10">
+        Utforsk kursutvalget vårt for fagfolk i offentlig sektor, med fokus på økonomisk forståelse, teknologi og frihet. Kursene bygger på hverandre og gir deg verktøy til å møte fremtiden med kompetanse og ro.
       </p>
 
-      <a href="https://bbnbtc.github.io/kurs-sosionomer/"
-         class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">
-        🚀 Kurs for sosionomer
-      </a>
+      <!-- Kursknapper -->
+      <div class="grid md:grid-cols-3 gap-4 mb-12">
+        <a href="https://bbnbtc.github.io/kurs-sosionomer/"
+           class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">
+          Introduksjonskurs (3 dager)
+        </a>
+        <a href="#avansert"
+           class="bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition">
+          Avansert kurs
+        </a>
+        <a href="#ekspert"
+           class="bg-yellow-600 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition">
+          Ekspertkurs
+        </a>
+      </div>
+
+      <!-- Ekstra lenker -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://norsats.no"
+           class="border border-gray-400 px-5 py-2 rounded hover:bg-gray-800 transition">
+          🔙 Til hovedsiden (norsats.no)
+        </a>
+        <a href="#kontakt"
+           class="border border-gray-400 px-5 py-2 rounded hover:bg-gray-800 transition">
+          ✉️ Kontakt oss
+        </a>
+      </div>
+    </section>
+
+    <!-- Kursnivåseksjoner -->
+    <section id="avansert" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Avansert kurs</h2>
+      <p class="text-gray-300">
+        Dette kurset er for deg som har fullført introduksjonen og ønsker dypere forståelse av Bitcoin, Lightning Network, digital autonomi og hvordan nye teknologier utfordrer NAV og tradisjonelle systemer.
+      </p>
+    </section>
+
+    <section id="ekspert" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Ekspertkurs</h2>
+      <p class="text-gray-300">
+        Ekspertkurset er for deg som ønsker å bli rådgiver, kursholder eller veileder i feltet. Du lærer om node-drift, BTCPay Server, økonomisk filosofi og hvordan bygge robuste digitale løsninger for mennesker i sårbare situasjoner.
+      </p>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Kontakt oss</h2>
+      <p class="text-gray-300 mb-4">
+        Har du spørsmål om kurs, samarbeid eller ønsker å få tilpasset et kurs til din organisasjon?
+      </p>
+      <p class="text-gray-300">
+        📧 <a href="mailto:bjarne.borgan@norsats.no" class="underline text-yellow-400 hover:text-yellow-300">bjarne.borgan@norsats.no</a>
+      </p>
     </section>
   </main>
 
